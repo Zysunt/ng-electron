@@ -21,8 +21,22 @@
     "appId": "com.zoey.app",
     "productName": "webport",
     "copyright": "jiangsuport",
+    "asar": true,
+    "compression": "maximum",
     "directories": {
       "output": "build"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true,
+      "menuCategory": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "./src/assets/logo.svg",
+      "uninstallerIcon": "./src/assets/logo.svg",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "zoey",
+      "include": "build/script/installer.nsh"
     },
     "win": {
       "target": [
@@ -33,17 +47,7 @@
       "icon": "./src/assets/logo.svg"
     }
   },
-  "nsis": {
-    "oneClick": false,
-    "allowElevation": true,
-    "allowToChangeInstallationDirectory": true,
-    "installerIcon": "./src/assets/logo.svg",
-    "uninstallerIcon": "./src/assets/logo.svg",
-    "createDesktopShortcut": true,
-    "createStartMenuShortcut": true,
-    "shortcutName": "zoey",
-    "include": "build/script/installer.nsh"
-  },
+  
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.1.3",
