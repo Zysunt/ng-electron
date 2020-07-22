@@ -31,12 +31,9 @@
       "allowElevation": true,
       "menuCategory": true,
       "allowToChangeInstallationDirectory": true,
-      "installerIcon": "./src/assets/logo.svg",
-      "uninstallerIcon": "./src/assets/logo.svg",
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "zoey",
-      "include": "build/script/installer.nsh"
+      "shortcutName": "zoey"
     },
     "win": {
       "target": [
@@ -47,7 +44,6 @@
       "icon": "./src/assets/logo.svg"
     }
   },
-  
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.1.3",
@@ -58,7 +54,6 @@
     "@angular/platform-browser": "~9.1.3",
     "@angular/platform-browser-dynamic": "~9.1.3",
     "@angular/router": "~9.1.3",
-    "ngx-electron": "^2.2.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
@@ -72,6 +67,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
+    "ngx-electron": "^2.2.0",
     "electron": "^9.0.5",
     "electron-builder": "^22.7.0",
     "jasmine-core": "~3.5.0",
